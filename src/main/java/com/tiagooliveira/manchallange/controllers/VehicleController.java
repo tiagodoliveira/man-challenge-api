@@ -14,13 +14,13 @@ public class VehicleController {
         this.repository = repository;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/vehicles")
     List<Vehicle> allVehicle() {
         return repository.findAll();
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/vehicles/{license}")
     List<Vehicle> vehicleByLicense(@PathVariable String license) {
         return repository.findByLicense(license);

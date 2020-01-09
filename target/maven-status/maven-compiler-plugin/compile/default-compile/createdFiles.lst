@@ -1,0 +1,6 @@
+com\tiagooliveira\manchallange\business\service\VehicleService.class
+com\tiagooliveira\manchallange\controllers\VehicleController.class
+com\tiagooliveira\manchallange\data\entity\Vehicle.class
+com\tiagooliveira\manchallange\data\repository\VehicleRepository.class
+com\tiagooliveira\manchallange\tools\DatabaseValuesGenerator.class
+com\tiagooliveira\manchallange\ManchallangeApplication.class
