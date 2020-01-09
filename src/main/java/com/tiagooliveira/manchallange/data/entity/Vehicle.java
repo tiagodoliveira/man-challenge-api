@@ -1,14 +1,9 @@
 package com.tiagooliveira.manchallange.data.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Data
-@NoArgsConstructor
 @Table(name="VEHICLE")
 public class Vehicle {
 
@@ -25,4 +20,36 @@ public class Vehicle {
 
     @Column(name="LNG")
     private BigDecimal lng;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public BigDecimal getLat() {
+        return lat;
+    }
+
+    public void setLat(BigDecimal lat) {
+        this.lat = lat;
+    }
+
+    public BigDecimal getLng() {
+        return lng;
+    }
+
+    public void setLng(BigDecimal lng) {
+        this.lng = lng;
+    }
 }
